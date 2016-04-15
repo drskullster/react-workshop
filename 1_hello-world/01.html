@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React 101</title>
+      <script type="text/javascript" src="./react-with-addons.js"></script>
+      <script type="text/javascript" src="./react-dom.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.js"></script>
+      <script type="text/babel">
+        var HelloWorld = React.createClass({
+          render: function() {
+            return (<div>Hello World</div>);
+          }
+        });
+
+        ReactDOM.render(<HelloWorld />, document.getElementById("container"));
+      </script>
+  </head>
+  <body>
+    <div id="container"></div>
+  </body>
+</html>
